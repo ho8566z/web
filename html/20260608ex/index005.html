@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form(양식) 태그</title>
+    <!-- client에서 server로 request를 보낼 때, 사용하는 태그: form -->
+</head>
+<body>
+    <!-- form(양식) 태그 -->
+    <form action="https://192.168.0.144/newmember/sign-up" method="post">
+        <!-- get: 사용자가 입력한 데이터를 '도메인'주소 뒤에 붙어서 전달하는 방식(비보안적)
+            post: 사용자가 입력한 데이터를 'reqest'객체의 body부분에 숨겨져 전달되는 방식(보안적) -->
+        <input type="text" placeholder="회원 NAME 입력 :  ">
+        <br>
+        <input type="text" placeholder="회원 ID 입력 :  ">
+        <br>
+        <input type="password" placeholder="회원 PW 입력 :  ">
+        <br>
+        <input type="text" placeholder="회원 PHONE 입력 :  ">
+        <br>
+        <input type="email" placeholder="회원 MAIL 입력 :  ">
+        <br>
+        <input type="number" min="1" max="20" placeholder="회원 AGE 입력 :  ">
+        <br>
+        좋아하는 색상: <input type="color" value="#215426">
+        <!-- color의 RGB값은 16진수로서 "#(R)NN;(G)NN;(B)NN"으로 ';'은 빼고 표기한다 -->
+        <br>
+        생일: <input type="date">
+        <br>
+        지금: <input type="datetime-local">
+        <br>
+        국가: 
+        <select>
+            <option>대한민국</option>
+            <option>중국</option>
+            <option>미국</option>
+            <option>일본</option>
+            <option>영국</option>
+        </select>
+        <br>
+        취미: 축구: <input type="checkbox"> | 
+        야구: <input type="checkbox"> | 
+        농구: <input type="checkbox">
+        <br>
+        성별: 남성: <input type="radio" name="gender"> | 
+        여성: <input type="radio" name="gender">
+        <br>
+        직업: 학생: <input type="radio" name="job"> | 
+        회사원: <input type="radio" name="job"> | 
+        자영업: <input type="radio" name="job"> | 
+        경찰: <input type="radio" name="job"> | 
+        의사: <input type="radio" name="job"> | 
+        은퇴: <input type="radio" name="job"> | 
+        <br>
+        <!-- <button>회원가입</button> -->
+        <!-- <input type="button" value="회원가입"> -->
+        <input type="submit" value="회원가입"> <input type="reset" value="초기화">
+    </form>
+
+    <br><br>
+
+    <form action="https://192.168.0.144/newmember/sign-up" 
+        method="post" 
+        name="signupform">
+        <input type="text" placeholder="user id">
+        <br>
+        <input type="password" placeholder="user pw">
+        <br>
+        <textarea> </textarea>
+        <br>
+        <input type="submit" value="signin">
+    </form>
+
+</body>
+</html>
