@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>INDEX002</title>
+
+    <link href="./index002.css" rel="stylesheet" type="text/css">
+    <link href="./index00201.css" rel="stylesheet" type="text/css">
+    <link href="./index00202.css" rel="stylesheet" type="text/css">
+    <link href="./index00203.css" rel="stylesheet" type="text/css">
+    <link href="./index00204.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+    <h1>This page is INDEX002</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ea recusandae maiores. Quisquam fugit odit harum veritatis repellendus porro veniam doloremque! Nam exercitationem, fugit debitis deserunt quos laborum quidem aut.</p>
+    <br>
+
+    /* 태그 선택자 */
+/* 특정 HTML 태그 이름을 기준으로 요소(element)를 선택하는 CSS 선택자이다 */
+/* 선택자 중에서 가장 많이 사용되는 선택자이다 */
+/* 참고: https://hoazzinews.tistory.com/99 */
+
+/* 기본 문법 */
+/* 
+태그이름 {
+        속성: 속성값;
+}
+*/
+
+/* h1 {
+    color: rgb(255, 0, 0);
+} */
+
+/* p {
+    color: rgb(0, 0, 255);
+} */
+
+/* h1 {
+    color: yellow;
+} */
+
+
+/* =================================================================== */
+/* a[href="https://www.google.com"] {
+    text-decoration: none;
+    color: tomato;
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+a.naver {
+    text-decoration: none;
+    color: rgb(71, 83, 255);
+    font-size: 3em;
+    font-weight: bold;
+} */
+
+/* a {
+    color: red;
+    text-decoration: none;
+}
+
+a[href="https://www.naver.com"] {
+    font-size: 1.2em;
+}
+a.naver {
+    font-size: 1.2em;
+} */
+/* a.naver: a(태그명).naver(클래스명) */
+
+    <!-- ================================================================= -->
+    <!-- ================================================================= -->
+    <!-- ================================================================= -->
+
+    <div id="div001">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam sequi a deleniti at provident quod consequatur porro veritatis doloribus, minima corrupti, quidem aliquid aspernatur. Accusamus quia omnis quasi error inventore?</div>
+    <!-- <div id="div001">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quam dolore veritatis consequatur molestias neque impedit, asperiores ratione eveniet placeat, debitis velit magni perspiciatis soluta odio, omnis atque repudiandae officiis!</div> -->
+    <div id="div002">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum recusandae ut ex animi accusamus suscipit nostrum est harum voluptatem sunt nobis dicta asperiores aspernatur saepe iste optio eligendi, tempora velit.</div>
+    <!-- But, ID 선택자는 [id="div001"] 위와 같이 ID가 중복되는 것은 지양해야 한다 -->
+    <!-- ID값은 유니크해야 하며, 각각의 ID를 가져야 한다 -->
+    <br>
+
+    /* ID 선택자 */
+/* HTML 요소의 ID 속성값을 기준으로 스타일을 적용하는 선택자이다 */
+/* 스타일을 적용하는 선택자이다 */
+/* 참고: https://hoazzinews.tistory.com/101 */
+
+/* div {
+    color: rgb(255, 0, 0);
+} */
+
+
+/* 기본 문법 */
+/* 
+#ID이름 {
+        속성: 속성값;
+}
+*/
+
+/* #div001 {
+    color: rgb(0, 255, 255);
+}
+
+#div002 {
+    color: rgb(255, 0, 255);
+} */
+
+
+    <!-- ================================================================= -->
+    <!-- ================================================================= -->
+    <!-- ================================================================= -->
+
+    <div class="div_class_name01 div_class_name02">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum recusandae ut ex animi accusamus suscipit nostrum est harum voluptatem sunt nobis dicta asperiores aspernatur saepe iste optio eligendi, tempora velit.</div>
+    <!-- <div class="div_class_name01">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum recusandae ut ex animi accusamus suscipit nostrum est harum voluptatem sunt nobis dicta asperiores aspernatur saepe iste optio eligendi, tempora velit.</div> -->
+    <div class="div_class_name01">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum recusandae ut ex animi accusamus suscipit nostrum est harum voluptatem sunt nobis dicta asperiores aspernatur saepe iste optio eligendi, tempora velit.</div>
+    <!--But, 클래스 선택자는 [class="div_class_name01"] ID 선택자와 달리, 중복되아도 상관없다  -->
+    <!-- 클래스 선택자는 유니크하지 않아도 된다 -->
+
+    <!-- But, ID선택자와 클래스선택자의 경우, 선택자명에 '공백'이 존재해서는 안된다 -->
+    <!-- 때문에, ID선택자는 공백없이 연결하고, 클래스선택자는 '_'를 사용한다 -->
+    <br>
+
+    /* 클래스 선택자 */
+/* HTML 문서의 요소(element)의 클래스 이름을 기준으로 스타일하는 선택자이다 */
+/* 참고: https://hoazzinews.tistory.com/100 */
+
+/* 기본 문법 */
+/* 
+.클래스이름 {
+            속성: 속성값;
+}
+*/
+
+/* .div_class_name01 {
+    color: crimson;
+}
+
+.div_class_name02 {
+    color: aqua;
+    font-size: 2em;
+} */
+
+
+    <!-- ================================================================= -->
+    <!-- ================================================================= -->
+    <!-- ================================================================= -->
+
+    <form>
+        ID: <input type="text" placeholder="INPUT New ID"><br>
+        PW: <input type="password" placeholder="INPUT New PW"><br>
+        MAIL: <input type="email" placeholder="INPUT New MAIL"><br>
+        PHONE: <input type="number" placeholder="INPUT New PHONE"><br>
+        AGE: <input type="number" placeholder="INPUT New AGE"><br>
+        <input type="submit" value="SIGN-UP"><br>
+        <input type="reset" value="RESET"><br>
+    </form>
+    <br>
+
+    /* 속성 선택자 */
+/* HTML 요소 중에서, 특정 속성을 갖고 있는 요소를 선택해서 스타일을 적용하는 선택자이다 */
+/* 정밀한 선택을 하고자 할때, 사용하는 언어 */
+/* 참고: https://hoazzinews.tistory.com/102 */
+
+/* 기본 문법 */
+/* 
+[속성이름] {
+           속성: 속성값;
+}
+*/
+
+/* ex */
+/* input[type="reset"] {
+    color: red;
+}
+
+input[type="email"] {
+    font-size: 1.2em;
+}
+
+input[value="SIGN-UP"] {
+    font-weight: bold;
+} */
+
+    <!-- ================================================================= -->
+    <!-- ================================================================= -->
+    <!-- ================================================================= -->
+
+
+    <!-- 모든 링크는 빨간색으로, 밑줄은 없앤다, 단, naver는 폰트 사이즈를 1.2em으로 한다 -->
+    <a href="https://www.google.com">go google</a>
+    <a class="naver" href="https://www.naver.com">go naver</a>
+    <br>
+
+    <div>
+        <p>First WORD</p>
+        <section>
+            <p>
+                Second WORD
+                <br>
+                <a href="https://www.naver.com">naver</a>
+                <br>
+                <a class="google" href="https://www.google.com">google</a>
+            </p>
+        </section>
+        <section>
+            <a>gogogogo</a>
+            <b>
+                <a>nononono</a>
+            </b>
+        </section>
+    </div>
+
+/* 자손/후손 선택자 */
+/* 특정 요소 내부에 있는 모든 하위 요소들을 선택할 때, 사용한다 */
+/* 참고: https://hoazzinews.tistory.com/105 */
+
+/* 기본 문법 */
+/* 
+부모선택자 자식선택자 {
+                    속성: 속성값;
+}
+*/  
+
+
+/*
+<!-- <div>
+    <p>First WORD</p>
+    <section>
+        <p>Second WORD</p>
+    </section>
+</div> -->
+*/
+
+/* 후손 선택자 */
+/* div p {
+    color: rgb(0, 255, 200);
+} */
+
+
+/* 자손 선택자 */
+/* div > section > p > a {
+    text-decoration: none;
+} */
+
+/* div > section > p > a {~}: div를 기준으로 후손 선택자로 변경 */
+/* div > section a {
+    color: red;
+    font-weight: bolder;
+}
+
+div a.google {
+    color: teal;
+    font-size: 2em;
+} */
+
+</body>
+</html>

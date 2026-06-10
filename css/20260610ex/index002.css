@@ -1,0 +1,52 @@
+/* 태그 선택자 */
+/* 특정 HTML 태그 이름을 기준으로 요소(element)를 선택하는 CSS 선택자이다 */
+/* 선택자 중에서 가장 많이 사용되는 선택자이다 */
+/* 참고: https://hoazzinews.tistory.com/99 */
+
+/* 기본 문법 */
+/* 
+태그이름 {
+        속성: 속성값;
+}
+*/
+
+/* h1 {
+    color: rgb(255, 0, 0);
+} */
+
+/* p {
+    color: rgb(0, 0, 255);
+} */
+
+/* h1 {
+    color: yellow;
+} */
+
+
+/* =================================================================== */
+/* a[href="https://www.google.com"] {
+    text-decoration: none;
+    color: tomato;
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+a.naver {
+    text-decoration: none;
+    color: rgb(71, 83, 255);
+    font-size: 3em;
+    font-weight: bold;
+} */
+
+/* a {
+    color: red;
+    text-decoration: none;
+}
+
+a[href="https://www.naver.com"] {
+    font-size: 1.2em;
+}
+a.naver {
+    font-size: 1.2em;
+} */
+/* a.naver: a(태그명).naver(클래스명) */

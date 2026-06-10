@@ -1,0 +1,24 @@
+/* 속성 선택자 */
+/* HTML 요소 중에서, 특정 속성을 갖고 있는 요소를 선택해서 스타일을 적용하는 선택자이다 */
+/* 정밀한 선택을 하고자 할때, 사용하는 언어 */
+/* 참고: https://hoazzinews.tistory.com/102 */
+
+/* 기본 문법 */
+/* 
+[속성이름] {
+           속성: 속성값;
+}
+*/
+
+/* ex */
+/* input[type="reset"] {
+    color: red;
+}
+
+input[type="email"] {
+    font-size: 1.2em;
+}
+
+input[value="SIGN-UP"] {
+    font-weight: bold;
+} */

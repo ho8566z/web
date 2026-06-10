@@ -1,0 +1,17 @@
+#wrap {
+    width: 600px;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    margin: auto;
+    padding: auto;
+    box-shadow: 3px 3px 3px rgba(200, 200, 200, .5);
+    
+}
+
+#web_name {
+    color: #03C75A;
+}
+
+/* #plus_description > a > h4 {
+    color: #03C75A;
+} */
