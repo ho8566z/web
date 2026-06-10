@@ -2,6 +2,7 @@
     width: 600px;
     border: 1px solid #cccccc;
     border-radius: 10px;
+    border-collapse: collapse;
     margin: auto;
     padding: auto;
     box-shadow: 3px 3px 3px rgba(200, 200, 200, .5);
@@ -10,8 +11,19 @@
 
 #web_name {
     color: #03C75A;
+    margin: 0 auto;
+    text-align: center;
+    font-size: x-large;
 }
 
-/* #plus_description > a > h4 {
+
+
+#footer .name {
     color: #03C75A;
-} */
+    display: inline-block;
+}
+
+#footer .description {
+    color: #242424;
+    display: inline-block;
+}
