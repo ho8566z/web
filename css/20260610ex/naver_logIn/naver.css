@@ -9,13 +9,34 @@
     
 }
 
+#wrap .head {
+    width: 200px;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    border-collapse: collapse;
+    margin: auto;
+    padding: auto;
+    box-shadow: 3px 3px 3px rgba(200, 200, 200, .5);
+}
+
+#wrap .head .head1 {
+    display: inline-block;
+}
+
+#wrap .head .head2 {
+    display: inline-block;
+}
+
+#wrap .head .head3 {
+    display: inline-block;
+}
+
 #web_name {
     color: #03C75A;
     margin: 0 auto;
     text-align: center;
     font-size: x-large;
 }
-
 
 
 #footer .name {

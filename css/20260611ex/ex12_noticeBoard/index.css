@@ -1,0 +1,35 @@
+#wrap {
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* board start */
+#wrap div.board {
+    width: 90%;
+    margin: 30px auto;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: double #dadada;
+}
+/* board end */
+
+/* main start */
+#wrap div.main {
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid #dadada;
+    border-radius: 0;
+    padding: 20px;
+}
+
+#wrap div.main ul {
+    width: 95%;
+    margin: 0 auto;
+}
+
+#wrap div.main ul:nth-child(1) {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+/* main end */
