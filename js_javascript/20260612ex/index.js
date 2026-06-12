@@ -1,0 +1,21 @@
+// console.log("Hello, Javascript_1");
+// console.log("Hello, Javascript_2");
+// console.log("Hello, Javascript_3");
+
+
+// javascript의 변수란?
+// var, let, const 키워드를 사용해 선언한다
+var num = 10;
+console.log('num: ', num)
+console.log('num: ' + num)
+
+
+/* 
+변수 이름 작성 규칙 (식별자 규칙)
+
+- 영문자, 숫자, _, $만 사용할 수 있습니다.
+- 숫자로 시작할 수 없습니다.
+- 대소문자를 구분합니다 (age와 Age는 다른 변수입니다).
+- JavaScript의 예약어(if, for, class 등)는 변수명으로 사용할 수 없습니다.
+- 의미 있는 이름을 사용하는 것이 좋습니다. (x, y보다는 userAge, price 등)
+*/

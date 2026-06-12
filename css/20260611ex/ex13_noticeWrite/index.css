@@ -1,0 +1,73 @@
+#wrap {
+    width: 1200px;
+    margin: 10px auto;
+}
+
+/* 대가리 start */
+#wrap div.head {
+    width: 90%;
+    margin: 30px auto;
+    text-align: center;
+    border-bottom: 1px dashed #dadada;
+    font-size: 1.3em;
+    color: #242424;
+}
+/* 대가리 end */
+
+/* 몸뚱이 start */
+#wrap table {
+    width: 95%;
+    border-collapse: collapse;
+}
+
+#wrap table th {
+    padding: 10px;
+    border: 1px solid #dadada;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+#wrap table th:nth-child(1) {
+    width: 100px;
+    height: 50px;
+    background-color: #fafafa;
+}
+
+#wrap table tbody th:nth-child(1) {
+    height: 500px;
+}
+
+#wrap table th input {
+    width: 100%;
+}
+
+#wrap table thead input {
+    height: 45px;
+}
+
+#wrap table tbody input {
+    height: 480px;
+}
+/* 몸뚱이 end */
+
+/* 버튼 start */
+#wrap div.button ul {
+    margin: 8px;
+    text-align: right;
+    font-size: .8em;
+}
+
+#wrap div.button ul a {
+    border: 1px solid #dadada;
+    padding: 5px 10px;
+    background-color: #48bae4;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+#wrap div.button ul a:hover {
+    text-decoration: none;
+    background-color: #3dadd7;
+}
+/* 버튼 end */
