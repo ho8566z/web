@@ -33,7 +33,8 @@
     text-decoration: none;
 }
 
-#wrap > div.menu_wrap a.sign_out {
+#wrap > div.menu_wrap a.sign_out, 
+#wrap > div.menu_wrap a.delete {
     display: none;
 }
 /* 메뉴 end */
@@ -80,5 +81,13 @@
 #wrap > div.list_wrap {
     text-align: center;
     display: none;
+}
+
+#wrap > div.list_wrap div {
+    border: px solid #dadada;
+    border-radius: 7px;
+    width: 600px;
+    padding: 10px;
+    margin: 2px auto;
 }
 /* 일기 리스트 end */

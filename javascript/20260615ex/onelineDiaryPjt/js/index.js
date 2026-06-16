@@ -1,6 +1,7 @@
 // document
 // 최상위 객체(window) -> document -> head / body -> div ==> Dom 트리
 
+// document.addEventListener(이벤트종류, 콜백함수(이벤트가 발생되면 실행(호출)되는 함수));
 document.addEventListener('DOMContentLoaded', function() {
     console.log('document ready');
 
@@ -20,7 +21,10 @@ document.addEventListener('DOMContentLoaded', function() {
 function init() {
     console.log('init() called');
 
-    initViews();
+    // 뷰와 관련된 내용
+    initVews();
+
+    // 이벤트와 관련된 내용
     addEvents();
 
 }
@@ -28,6 +32,7 @@ function init() {
 function addEvents() {
     console.log('addEvents() called');
 
+    // menu button event start
     let signUpMenuBtn = document.querySelector('div.menu_wrap a.sign_up');
     signUpMenuBtn.addEventListener('click', function() {
         console.log('signUpMenuBtn click');
@@ -41,14 +46,35 @@ function addEvents() {
         console.log('signInMenuBtn click');
 
         showSelectedView(SIGN_IN_VIEW);
-
+        
     });
 
     let signOutMenuBtn = document.querySelector('div.menu_wrap a.sign_out');
     signOutMenuBtn.addEventListener('click', function() {
         console.log('signOutMenuBtn click');
 
+        signInedMemberId = '';
+
+        // 메뉴 체인지
+        setMenuByStatus(SIGN_OUT_STATUS);
+
+        // 뷰 체인지
         showSelectedView(SIGN_OUT_VIEW);
+
+    });
+
+    let deleteMenuBtn = document.querySelector('div.menu_wrap a.delete');
+    deleteMenuBtn.addEventListener('click', function() {
+        console.log('deleteMenuBtn click');
+
+        remoneMemberBySignedMemberId();
+        alert('congraturation remove');
+
+        signInedMemberId == '';
+
+        setMenuByStatus(SIGN_OUT_STATUS);
+
+        showSelectedView(HOME_VIEW);
 
     });
 
@@ -56,38 +82,119 @@ function addEvents() {
     writeMenuBtn.addEventListener('click', function() {
         console.log('writeMenuBtn click');
 
-        showSelectedView(DIARY_WRITE_VIEW);
+        if (signInedMemberId === '') {
+            alert('please sign_in');
+            showSelectedView(SIGN_IN_VIEW);
+            return;
+        } 
+        
+        showSelectedView(WRITE_VIEW);
 
+        
     });
 
     let listMenuBtn = document.querySelector('div.menu_wrap a.list');
     listMenuBtn.addEventListener('click', function() {
         console.log('listMenuBtn click');
 
-        showSelectedView(DIARY_LIST_VIEW);
+        if (signInedMemberId === '') {
+            alert('please sign_in');
+            showSelectedView(SIGN_IN_VIEW);
+            return;
+        } 
+        
+        listUpDiaries();
 
+        showSelectedView(LIST_VIEW);
+        
     });
+    // menu button event end
 
     let signUpBtn = document.querySelector('div.sign_up_wrap input[type="button"]');
     signUpBtn.addEventListener('click', function() {
-        console.log('signUpBtn called');
-    
-        let u_id = document.querySelector('div.sign_up_wrap input[name="u_id"]').value;
-        let u_pw = document.querySelector('div.sign_up_wrap input[name="u_pw"]').value;
-        let u_mail = document.querySelector('div.sign_up_wrap input[name="u_mail"]').value;
+        console.log('signUpBtn clicked');
 
-        // console.log('u_id: ', u_id);
-        // console.log('u_pw: ', u_pw);
-        // console.log('u_mail: ', u_mail);
+        let uIdEle = document.querySelector('div.sign_up_wrap input[name="u_id"]');
+        let uPwEle = document.querySelector('div.sign_up_wrap input[name="u_pw"]');
+        let uMailEle = document.querySelector('div.sign_up_wrap input[name="u_mail"]');
 
-        addMember(u_id, u_pw, u_mail);
+        addMember(uIdEle.value, uPwEle.value, uMailEle.value);
 
-        alert('SIGN UP SUCCESS');
+        alert('sign_up success')
 
-        document.querySelector('div.sign_up_wrap input[name="u_id"]').value = '';
-        document.querySelector('div.sign_up_wrap input[name="u_pw"]').value = '';
-        document.querySelector('div.sign_up_wrap input[name="u_mail"]').value = '';
+        removeValue([uIdEle, uPwEle, uMailEle]);
 
     });
+
+    let signInBtn = document.querySelector('div.sign_in_wrap input[type="button"]');
+    signInBtn.addEventListener('click', function() {
+        console.log('signInBtn clicked');
+
+        let uIdEle = document.querySelector('div.sign_in_wrap input[name="u_id"]');
+        let uPwEle = document.querySelector('div.sign_in_wrap input[name="u_pw"]');
+
+        let isMember = searchMember(uIdEle.value, uPwEle.value)
+        if (isMember) {
+            signInedMemberId = uIdEle.value;
+            alert('sign_in success');
+
+            setMenuByStatus(SIGN_IN_STATUS);
+
+            showSelectedView(HOME_VIEW);
+
+        } else {
+            signInedMemberId = '';
+            alert('sign_in fail');
+
+            setMenuByStatus(SIGN_OUT_STATUS);
+
+        }
+
+        removeValue([uIdEle, uPwEle]);
+
+    });
+
+    let writeBtn = document.querySelector('div.write_wrap button');
+    writeBtn.addEventListener('click', function() {
+        console.log('writeBtn click');
+
+        let txt = document.querySelector('div.write_wrap input').value;
+
+        addDiary(getCurrentDate() + txt);
+
+        removeValue([document.querySelector('div.write_wrap input')]);
+
+        showSelectedView(LIST_VIEW);
+
+    });
+
+}
+
+function removeValue(eles) {
+    console.log('removeValue() called')
+
+    for(let i = 0; i < eles.length; i++) {
+        eles[i].value = '';
+    }
+
+}
+
+function listUpDiaries() {
+    console.log('listUpDiaries() called');
+
+    listWrap.textContent = '';
+
+    let diaryArr = searchDiaries();
+
+    for (let i = 0; i < diaryArr.length; i++) {
+
+        let tpl = document.querySelector('#list_item');
+        let clone = document.importNode(tpl.content, true);
+        let txt = clone.querySelector('div.txt');
+        txt.textContent = diaryArr[i];
+
+        listWrap.prepend(clone);
+
+    }
 
 }
