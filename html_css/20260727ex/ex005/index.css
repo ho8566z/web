@@ -1,0 +1,33 @@
+#wrap {
+    width: 800px;
+    margin: 0 auto;
+}
+
+#wrap > ul {
+    margin-bottom: 15px;
+}
+
+/* pic start */
+#wrap > ul > li.pic > img {
+    min-width: 270px;
+    max-width: 270px;
+    border-radius: 5px;
+}
+/* pic end */
+
+/* word start */
+#wrap > ul > li.word {
+    width: 520px;
+    margin-left: 10px;
+}
+
+#wrap > ul > li.word div:nth-child(1) span.cate {
+    color: #f00;
+    font-weight: bold;
+}
+
+#wrap > ul > li.word div:nth-child(2) {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+/* word end */

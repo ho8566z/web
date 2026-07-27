@@ -1,0 +1,87 @@
+#wrap {
+    width: 550px;
+    margin: 0 auto;
+    background-color: #2545b2;
+    padding: 40px 0;
+}
+
+#wrap div.special {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: bold;
+    color: #98f3cf;
+}
+
+#wrap div.title {
+    text-align: center;
+    font-size: 1.6em;
+    color: #fff;
+    font-weight: bold;
+}
+
+#wrap div.design {
+    width: 400px;
+    height: 230px;
+    background-color: #fff;
+    margin: 30px auto;
+    border-radius: 10px;
+    position: relative;
+}
+
+#wrap div.design li.sale {
+    width: 260px;
+    height: 230px;
+}
+
+#wrap div.design li.sale div:nth-child(1) {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 5em;
+    font-weight: bold;
+}
+
+#wrap div.design li.sale div:nth-child(2) {
+    margin-top: 10px;
+    text-align: center;
+}
+
+#wrap div.design li.gap {
+    width: 1px;
+    height: 230px;
+    background-color: #dadada;
+}
+
+#wrap div.design li.img {
+    width: 135px;
+    text-align: center;
+    padding-top: 80px;
+}
+
+#wrap > div.design > div.hole_left {
+    width: 40px;
+    height: 40px;
+    background-color: #2545b2;
+    border-radius: 20px;
+    position: absolute;
+    top: 90px;
+    left: -20px;
+}
+
+#wrap > div.design > div.hole_right {
+    width: 40px;
+    height: 40px;
+    background-color: #2545b2;
+    border-radius: 20px;
+    position: absolute;
+    top: 90px;
+    right: -20px;
+}
+
+#wrap div.txt {
+    text-align: center;
+    margin: 10px 0;
+    color: rgba(255, 255, 255, .6);
+    font-size: 1.1em;
+    line-height: 1.5em;
+}

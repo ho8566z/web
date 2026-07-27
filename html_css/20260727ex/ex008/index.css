@@ -1,0 +1,27 @@
+#root {
+    width: 600px;
+    margin: 0 auto;
+}
+
+#root > div.chat_wrap > ul {
+    border: 1px solid #dadada;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px 0;
+    box-shadow: 2px 2px 1px #ececec;
+}
+
+#root > div.chat_wrap > ul > li {
+    margin: 0 20px;
+}
+
+#root > div.chat_wrap > ul > li > div > img {
+    min-width: 60px;
+    max-width: 60px;
+    border-radius: 30px;
+    border: 1px solid #dadada;
+}
+
+#root > div.chat_wrap > ul > li > div.name {
+    text-align: center;
+}

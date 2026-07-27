@@ -1,0 +1,22 @@
+#wrap {
+    width: 300px;
+    margin: 20px auto;
+}
+
+#wrap ul.private {
+    margin-bottom: 10px;
+}
+
+#wrap ul.private div img {
+    min-width: 50px;
+    max-width: 50px;
+    border-radius: 25px;
+}
+
+#wrap ul.private li:nth-child(2) {
+    width: 230px;
+    margin-left: 20px;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px dashed #dadada;
+}

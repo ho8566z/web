@@ -1,0 +1,49 @@
+#wrap {
+    width: 1250px;
+    margin: 0 auto;
+}
+
+/* logo start */
+#wrap div.logo {
+    font-size: 2em;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: bold;
+}
+/* logo end */
+
+/* menu start */
+#wrap div.menu {
+    padding: 20px 0;
+    border-top: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+}
+
+#wrap div.menu li {
+    width: 250px;
+    text-align: center;
+}
+/* menu end */
+
+/* main_banner + main_goods start */
+#wrap div.main_banner {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#wrap div.main_goods {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+/* main_banner + main_goods end */
+
+/* bg_fixed start */
+#wrap div.bg_fixed {
+    height: 500px;
+    background-image: url(./imgs/1015-1250x1000.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+}
+/* bg_fixed end */

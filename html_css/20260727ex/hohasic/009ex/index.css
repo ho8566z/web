@@ -1,0 +1,106 @@
+header {
+    background-color: #000;
+}
+
+header div.header_wrap {
+    width: 1400px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+nav {
+    background-color: #000;
+}
+
+nav div.gnb_wrap {
+    width: 1400px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 auto;
+}
+
+nav div.gnb_wrap ul li {
+    padding: 0 20px;
+}
+
+nav div.gnb_wrap ul li a {
+    color: #fff;
+    font-size: .9em;
+}
+
+nav div.lnb_wrap {
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    background-color: #fff;
+}
+
+section div.section_wrap {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+section div.section_wrap li.article_left {
+    width: 680px;
+}
+
+section div.section_wrap li.article_left div:nth-child(1) {
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+section div.section_wrap li.article_left div:nth-child(2) {
+    margin: 15px 0;
+}
+
+section div.section_wrap li.article_left div:nth-child(3) a {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+section div.section_wrap li.article_left div:nth-child(4) {
+    margin: 15px 0;
+}
+
+section div.section_wrap li.article_left div:nth-child(4) li {
+    float: none;
+    padding-top: 7px;
+}
+
+section div.section_wrap li.article_center {
+    width: 328px;
+    margin: 0 30px;
+}
+
+section div.section_wrap li.article_center div:nth-child(2),
+section div.section_wrap li.article_center div:nth-child(4),
+section div.section_wrap li.article_center div:nth-child(6) {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+section div.section_wrap li.article_right {
+    width: 332px;
+}
+
+section div.section_wrap li.article_right div:nth-child(2) {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+section div.section_wrap li.article_right div:nth-child(3) li {
+    float: none;
+    padding-top: 15px;
+    border-bottom: 1px dashed #dadada;
+}
+
+section div.section_wrap li.article_right div:nth-child(3) li a:hover {
+    text-decoration: none;
+}
+
+section div.section_wrap li.article_right div:nth-child(3) li:hover {
+    background-color: rgba(200, 200, 200, .2);
+}
