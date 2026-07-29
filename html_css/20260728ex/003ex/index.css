@@ -1,0 +1,62 @@
+#wrap {
+    width: 640px;
+    margin: 0 auto;
+}
+
+#wrap div.ad_wrap {
+    width: 600px;
+    margin: 0 auto 50px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+#wrap div.ad_wrap div.title {
+    text-align: center;
+    margin: 10px 0;
+}
+
+#wrap div.ad_wrap div.main_goods {
+    height: 300px;
+    overflow: hidden;
+}
+
+#wrap div.ad_wrap div.main_goods a img {
+    min-width: 600px;
+    max-width: 600px;
+}
+
+#wrap div.ad_wrap div.sub_goods {
+    margin: 20px 0;
+}
+
+#wrap div.ad_wrap div.sub_goods ul li.img {
+    margin-right: 10px;
+}
+
+#wrap div.ad_wrap div.sub_goods ul li.img > a > img {
+    min-width: 100px;
+    max-width: 100px;
+}
+
+#wrap div.ad_wrap div.sub_goods ul li.info > a > p {
+    font-size: 1.1em;
+}
+
+#wrap div.ad_wrap div.sub_goods ul li.info > a > p:first-child {
+    font-weight: bold;
+}
+
+#wrap div.ad_wrap div.more_share a {
+    display: inline-block;
+    width: 297px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #f7f7f7;
+    border-radius: 7px;
+    text-align: center;
+}
+
+#wrap div.ad_wrap div.more_share a:hover {
+    text-decoration: none;
+}

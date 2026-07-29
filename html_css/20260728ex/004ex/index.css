@@ -1,0 +1,55 @@
+#wrap {
+    width: auto;
+    margin: 0 auto;
+}
+
+#wrap div.a_wrap {
+    width: 750px;
+    margin: 0 auto 50px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+#wrap div.a_wrap div.title {
+    text-align: center;
+    margin: 10px;
+    line-height: 40px;
+    border-bottom: 1px dashed #dadada;
+}
+
+#wrap div.a_wrap div.main_goods {
+    height: auto;
+    overflow: visible;
+}
+
+#wrap div.a_wrap div.main_goods ul {
+    padding: 10px;
+    margin: center;
+    line-height: 20px;
+    border-bottom: 1px solid #dadada
+}
+
+#wrap div.a_wrap div.main_goods li.number {
+    margin: 10px 20px 20px 20px;
+    padding: auto;
+}
+
+#wrap div.a_wrap div.main_goods li.number > p {
+    font-size: 2.0em;
+    margin: 5px 20px 0px 0px;
+}
+
+#wrap div.a_wrap div.main_goods li.info {
+    line-height: 30px;
+}
+
+#wrap div.a_wrap div.main_goods li.info :nth-child(1) {
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+#wrap div.a_wrap div.main_goods li.info :nth-child(2) {
+    font-weight: 100;
+    margin: center;
+}

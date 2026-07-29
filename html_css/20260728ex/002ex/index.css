@@ -1,0 +1,31 @@
+#wrap {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#wrap div.gnb {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#wrap div.gnb > div.item {
+    width: 130px; height: 40px;
+    padding: 10px;
+    margin: 0 20px;
+    border-bottom: 1px solid #dadada;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#wrap div.gnb > div.item:hover {
+    border-bottom: 3px solid #ab5757;
+}
+
+#wrap div.gnb > div.item a:hover{
+    text-decoration: none;
+}
+
+#wrap div.main_slide {
+    margin: 20px auto;
+}

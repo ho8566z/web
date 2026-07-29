@@ -1,0 +1,69 @@
+#wrap {
+    width: 500px;
+    margin: 0 auto;
+}
+
+#wrap div.search {
+    height: 40px;
+    margin: 10px 0;
+}
+
+#wrap div.search ul li {
+    float: right;
+}
+
+#wrap div.search input {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #dadada;
+    border-radius: 20px;
+}
+
+#wrap div.search input:focus {
+    outline: none;
+}
+
+#wrap div.search button {
+    width: 100px;
+    margin-left: 5px;
+    padding: 10px;
+    border: 1px solid #dadada;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#wrap div.search button:hover {
+    background-color: #e7e7e7;
+    color: #fff;
+}
+
+#wrap div.dic {
+    background-color: #f4f3ef;
+}
+
+#wrap ul.word_wrap {
+    border-bottom: 1px dashed #dadada;
+}
+
+#wrap ul.word_wrap li {
+    padding: 15px;
+}
+
+#wrap ul.word_wrap li.word_eng {
+    width: 140px;
+}
+
+#wrap ul.word_wrap li.word_eng span.word {
+    font-weight: bold;
+    color: #5f8d9f;
+}
+
+#wrap ul.word_wrap li.word_eng span.pronunciation{
+    color: #373737;
+}
+
+#wrap ul.word_wrap li.word_kor {
+    color: #373737;
+    font-weight: bold;
+    width: 290px;
+}
