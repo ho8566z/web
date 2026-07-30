@@ -1,0 +1,112 @@
+#wrap {
+    width: 800px;
+    margin: 0 auto;
+}
+
+/* title */
+#wrap div.title_wrap {
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    border-bottom: thick double #dadada;
+}
+
+/* menu */
+#wrap div.menu_wrap {
+    text-align: center;
+}
+
+#wrap div.menu_wrap a {
+    display: inline-block;
+    width: 100px;
+    margin: 10px 5px;
+    border: 1px solid #dadada;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#wrap div.menu_wrap a:hover {
+    background-color: #e0e0e0;
+    text-decoration: none;
+}
+
+#wrap div.menu_wrap a.sign_out {
+    display: none;
+}
+
+/* sign up */
+#wrap div.sign_up_wrap {
+    text-align: center;
+    display: none;
+}
+
+#wrap div.sign_up_wrap input {
+    width: 400px;
+    padding: 10px;
+    margin: 1px;
+    border: 1px solid #dadada;
+    border-radius: 7px;
+}
+
+#wrap div.sign_up_wrap input[type='button'] {
+    width: 100px;
+    cursor: pointer;
+}
+
+#wrap div.sign_up_wrap input[type='button']:hover {
+    background-color: #ccd6ed;
+}
+
+/* sign in */
+#wrap div.sign_in_wrap {
+    text-align: center;
+    display: none;
+}
+
+#wrap div.sign_in_wrap input {
+    width: 400px;
+    padding: 10px;
+    margin: 1px;
+    border: 1px solid #dadada;
+    border-radius: 7px;
+}
+
+#wrap div.sign_in_wrap input[type='button'] {
+    width: 100px;
+    cursor: pointer;
+}
+
+#wrap div.sign_in_wrap input[type='button']:hover {
+    background-color: #ccd6ed;
+}
+
+/* write */
+#wrap div.write_wrap {
+    text-align: center;
+    display: none;
+}
+
+#wrap div.write_wrap input {
+    width: 500px;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #dadada;
+    border-radius: 7px;
+    font-size: 1.2em;
+    outline: none;
+}
+
+#wrap div.write_wrap button {
+    padding: 20px;
+    margin: 10px 0;
+    border: 1px solid #dadada;
+    border-radius: 7px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+#wrap div.write_wrap button:hover {
+    background-color: #ccd6ed;
+}
