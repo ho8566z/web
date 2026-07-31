@@ -1,10 +1,10 @@
-export const SIGN_UP_VIEW = 1;
-export const SIGN_IN_VIEW = 2;
-export const SIGN_OUT_VIEW = 3;
-export const WRITE_VIEW = 4;
-export const LIST_VIEW = 5;
+export const SIGN_UP_VIEW          = 1;
+export const SIGN_IN_VIEW          = 2;
+export const SIGN_OUT_VIEW         = 3;
+export const DIARY_WRITE_VIEW      = 4;
+export const DIARY_LIST_VIEW       = 5;
 
-const views = {
+export const views = {
     signUpWrap: '',
     signInWrap: '',
     writeWrap: '',
@@ -12,9 +12,7 @@ const views = {
 }
 
 export const initViews = () => {
-    // '=>'는 실제적으로 익명함수, 'initViews'는 변수명에 가깝고, 
-    // js는 함수도 데이터 취급이다
-    console.log('initViews() called!');
+    console.log('initViews() CALLED!!');
 
     views.signUpWrap = document.querySelector('div.sign_up_wrap');
     views.signInWrap = document.querySelector('div.sign_in_wrap');
@@ -24,10 +22,10 @@ export const initViews = () => {
 }
 
 export const showSelectedView = (viewNo) => {
-    console.log('showSelectedView() called!');
+    console.log('showSelectedView() CALLED!!');
 
     switch(viewNo) {
-        case SIGN_UP_VIEW:
+        case SIGN_UP_VIEW:      // 회원가입화면 보여라!!
             console.log('SIGN_UP_VIEW');
 
             views.signUpWrap.style.display = 'block';
@@ -37,7 +35,7 @@ export const showSelectedView = (viewNo) => {
 
             break;
 
-        case SIGN_IN_VIEW:
+        case SIGN_IN_VIEW:      // 로그인화면 보여라!!
             console.log('SIGN_IN_VIEW');
 
             views.signUpWrap.style.display = 'none';
@@ -47,7 +45,7 @@ export const showSelectedView = (viewNo) => {
 
             break;
 
-        case SIGN_OUT_VIEW:
+        case SIGN_OUT_VIEW:      // 로그아웃!!
             console.log('SIGN_OUT_VIEW');
 
             views.signUpWrap.style.display = 'none';
@@ -57,8 +55,8 @@ export const showSelectedView = (viewNo) => {
 
             break;
 
-        case WRITE_VIEW:
-            console.log('WRITE_VIEW');
+        case DIARY_WRITE_VIEW:      // 일기쓰기화면 보여라!!
+            console.log('DIARY_WRITE_VIEW');
 
             views.signUpWrap.style.display = 'none';
             views.signInWrap.style.display = 'none';
@@ -67,8 +65,8 @@ export const showSelectedView = (viewNo) => {
 
             break;
 
-        case LIST_VIEW:
-            console.log('LIST_VIEW');
+        case DIARY_LIST_VIEW:      // 일기목록화면 보여라!!
+            console.log('DIARY_LIST_VIEW');
 
             views.signUpWrap.style.display = 'none';
             views.signInWrap.style.display = 'none';
@@ -76,6 +74,6 @@ export const showSelectedView = (viewNo) => {
             views.listWrap.style.display = 'block';
 
             break;
-
     }
+
 }

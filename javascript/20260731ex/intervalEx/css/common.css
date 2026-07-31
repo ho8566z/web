@@ -1,0 +1,16 @@
+* {
+    margin: 0; padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #242424;
+}
+
+ul {
+    overflow: hidden;
+}
+
+li {
+    list-style: none;
+}

@@ -1,0 +1,14 @@
+#wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#wrap div.gallery_wrap ul {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#wrap div.gallery_wrap ul li.left_arrow,
+#wrap div.gallery_wrap ul li.right_arrow {
+    margin-top: 225px;
+}
