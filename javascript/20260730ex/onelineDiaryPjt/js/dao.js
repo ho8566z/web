@@ -15,7 +15,12 @@ export const insertNewMember = (id, newMemberObj) => {
 
 }
 
-export const searchMember = () => {
+export const searchMember = (id) => {
+    console.log('searMember() called');
+
+    let memberObj = memberDB.get(key);  // { ... } or undefined
+
+    return memberObj;
     
 }
 

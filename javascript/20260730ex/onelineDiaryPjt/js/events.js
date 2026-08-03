@@ -8,7 +8,14 @@ import {
 
 import { showSelectedView } from './viewChange.js';
 
-import { addMember } from './service.js';
+import {
+    addMember,
+    getMember
+} from './service.js';
+
+import {
+    clearEles
+} from './utils.js'
 
 export const addEvents = () => {
     console.log('addEvents() CALLED!!');
@@ -59,18 +66,39 @@ export const addEvents = () => {
     signUpBtn.addEventListener('click', function(){
         console.log('signUpBtn CLICKED!!');
 
-        let u_id = document.querySelector('div.sign_up_wrap input[name="u_id"]').value;
-        let u_pw = document.querySelector('div.sign_up_wrap input[name="u_pw"]').value;
-        let u_mail = document.querySelector('div.sign_up_wrap input[name="u_mail"]').value;
+        let u_id_ele = document.querySelector('div.sign_up_wrap input[name="u_id"]');
+        let u_pw_ele = document.querySelector('div.sign_up_wrap input[name="u_pw"]');
+        let u_mail_ele = document.querySelector('div.sign_up_wrap input[name="u_mail"]');
+
+        let u_id = u_id_ele.value;
+        let u_pw = u_pw_ele.value;
+        let u_mail = u_mail_ele.value;
 
         addMember(u_id, u_pw, u_mail);
+
+        clearEles();
+        u_id_ele.value = '';
+        u_pw_ele.value = '';
+        u_mail_ele.value = '';
 
     });
 
     let signInBtn = document.querySelector('div.sign_in_wrap input[type="button"]');
     signInBtn.addEventListener('click', function(){
         console.log('signInBtn CLICKED!!');
+
+        let u_id_ele = document.querySelector('div.sign_in_wrap input[name="u_id"]');
+        let u_pw_ele = document.querySelector('div.sign_in_wrap input[name="u_pw"]');
+
+        let u_id = u_id_ele.value;
+        let u_pw = u_pw_ele.value;
         
+        getMember(u_id, u_pw)
+
+        clearEles();
+        u_id_ele.value = '';
+        u_pw_ele.value = '';
+
     });
 
     let writeBtn = document.querySelector('div.write_wrap button');
