@@ -9,6 +9,7 @@ a {
     color: #242424;
 }
 
+/* 링크에 마우스를 올리면 밑줄을 표시한다 */
 a:hover {
     text-decoration: underline;
 }
