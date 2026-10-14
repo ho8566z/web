@@ -15,6 +15,7 @@ export const insertNewMember = (id, newMemberObj) => {
 
 }
 
+// id 로 회원 정보를 조회한다. 없으면 undefined 를 반환한다
 export const searchMember = (id) => {
     console.log('searchMember() CALLED!!');
 
