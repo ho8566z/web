@@ -14,7 +14,7 @@ function getCurrentDate() {
 
     // str += '[' + year + '/' (month +1) + '/' + date + '/' + days[day] + ']';
     // [2026/6/16/TUE]
-    str = `[${year}/${month +1}/${date}/${days[day]}] `;
+    let str = `[${year}/${month +1}/${date}/${days[day]}] `;
     // ``: python의 f문자열 같은
     
     return str;
