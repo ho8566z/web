@@ -1,6 +1,12 @@
-const SIGN_OUT_STATUS   = 1;
-const SIGN_IN_STATUS    = 2;
+// 메뉴 상태 번호
+const SIGN_OUT_STATUS   = 1;    // 로그아웃 상태: Sign-up, Sign-in 메뉴를 보여준다
+const SIGN_IN_STATUS    = 2;    // 로그인 상태: Sign-out, Delete 메뉴를 보여준다
 
+/**
+ * 로그인 상태에 맞게 상단 메뉴의 링크를 보이거나 숨긴다.
+ *
+ * @param {number} menuStatusNo SIGN_OUT_STATUS 또는 SIGN_IN_STATUS
+ */
 function setMenuByStatus(menuStatusNo) {
     console.log('setMenuByStatus() called');
 
