@@ -68,7 +68,7 @@ function addEvents() {
         console.log('deleteMenuBtn click');
 
         remoneMemberBySignedMemberId();
-        alert('congraturation remove');
+        alert('remove success');
 
         signInedMemberId = '';
 
