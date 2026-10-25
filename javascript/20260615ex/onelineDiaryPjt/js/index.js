@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 // .addEventListener: 문서 내에 존재하는 모든 이벤트를 들을 수 있도록 하는 내장함수
-// 이벤트: 클릭, 스트롤, 입력 등의 모든 행위
+// 이벤트: 클릭, 스크롤, 입력 등의 모든 행위
 // DOMContentLoaded: 이벤트의 종류로, 맨위부터 맨아래까지 렌더링되는 것을 끝내고, 
 // 문서에게 렌더링의 종료 알림을 인식하는 것(= 문서의 조작가능 상태를 알림)
 
