@@ -10,7 +10,7 @@ let signInWrap = '';
 let writeWrap = '';
 let listWrap = '';
 
-function initVews() {
+function initViews() {
     console.log('initViews() called');
 
     signUpWrap = document.querySelector('div.sign_up_wrap');

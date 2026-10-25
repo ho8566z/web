@@ -22,7 +22,7 @@ function init() {
     console.log('init() called');
 
     // 뷰와 관련된 내용
-    initVews();
+    initViews();
 
     // 이벤트와 관련된 내용
     addEvents();
