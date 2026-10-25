@@ -67,7 +67,7 @@ function addEvents() {
     deleteMenuBtn.addEventListener('click', function() {
         console.log('deleteMenuBtn click');
 
-        remoneMemberBySignedMemberId();
+        removeMemberBySignedMemberId();
         alert('remove success');
 
         signInedMemberId = '';

@@ -27,8 +27,8 @@ function searchMember(id, pw) {
 
 }
 
-function remoneMemberBySignedMemberId() {
-    console.log('remoneMemberBySignedMemberId() called');
+function removeMemberBySignedMemberId() {
+    console.log('removeMemberBySignedMemberId() called');
 
     // memberDB에서 signInedMemberId를 지운다
     memberDB.delete(signInedMemberId);
