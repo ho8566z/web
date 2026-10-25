@@ -70,7 +70,7 @@ function addEvents() {
         remoneMemberBySignedMemberId();
         alert('congraturation remove');
 
-        signInedMemberId == '';
+        signInedMemberId = '';
 
         setMenuByStatus(SIGN_OUT_STATUS);
 
