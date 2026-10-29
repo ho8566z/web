@@ -24,7 +24,13 @@ export const openingNewAccount = () => {
     let customerNo = createCustomerNo();
     let accountNumber = createAccountNumber();
     let customerName = prompt('INPUT CUSTOMER NAME!! ');
+    if (customerName === null || customerName.trim() === '') {
+        return;
+    }
     let customerPhone = prompt('INPUT CUSTOMER PHONE!! ');
+    if (customerPhone === null || customerPhone.trim() === '') {
+        return;
+    }
 
     let customerObj = new Customer(customerNo, customerName, customerPhone, accountNumber);
     customerDB.set(customerNo, customerObj);
