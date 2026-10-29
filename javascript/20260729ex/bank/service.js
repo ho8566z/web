@@ -77,7 +77,15 @@ export const printDepositWithdrawHistory = () => {
     let customerNo =  prompt('INPUT CUSTOMER NO ');
     let accountNumber =  prompt('INPUT CUSTOMER NUNBER ');
 
-    for ( const [key, value] of accountDB) {
-        console.log('key: ${key} - vlaue: ${value.accountNumber} ${value.depositMoney} ${value.withdrawMoney} ${value.dateTime}')
+    const customer = customerDB.get(customerNo);
+    if (!customer || customer.accountNumber !== accountNumber) {
+        console.log('CUSTOMER OR ACCOUNT NOT FOUND!!');
+        return;
+    }
+
+    for (const [key, value] of accountDB) {
+        if (value.accountNumber === accountNumber) {
+            console.log(`key: ${key} - value: ${value.accountNumber} ${value.depositMoney} ${value.withdrawMoney} ${value.dateTime}`);
+        }
     }
 }
