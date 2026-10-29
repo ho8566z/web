@@ -29,7 +29,7 @@ export const openingNewAccount = () => {
     let customerObj = new Customer(customerNo, customerName, customerPhone, accountNumber);
     customerDB.set(customerNo, customerObj);
 
-    let accountObj = new Account(accountNo, 0, 0, getDateTimeFormat());
+    let accountObj = new Account(accountNumber, 0, 0, getDateTimeFormat());
     accountDB.set(accountNo, accountObj);
     accountNo++;
 
@@ -46,7 +46,7 @@ export const doDeposit = () => {
     let accountNumber =  prompt('INPUT CUSTOMER NUNBER ');
     let depositMoney =  prompt('INPUT DEPOSIT MONEY ');
 
-    new Account(accountNumber, depositMoney, 0, getDateTimeFormat());
+    let accountObj = new Account(accountNumber, depositMoney, 0, getDateTimeFormat());
     accountDB.set(accountNo, accountObj);
     accountNo++;
 
@@ -62,7 +62,7 @@ export const doWithDraw = () => {
     let accountNumber =  prompt('INPUT CUSTOMER NUNBER ');
     let withDrawMoney =  prompt('INPUT WITHDRAW MONEY ');
 
-    new Account(accountNumber, 0, withDrawMoney, getDateTimeFormat());
+    let accountObj = new Account(accountNumber, 0, withDrawMoney, getDateTimeFormat());
     accountDB.set(accountNo, accountObj);
     accountNo++;
 
