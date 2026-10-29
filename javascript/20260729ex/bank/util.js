@@ -9,7 +9,7 @@ export function createAccountNumber() {
     console.log('createAccountNumber() CALLED!!');
 
     let date = new Date();
-    let dateFormat = `${date.getFullYear()}${date.getMonth()}${date.getDate()}-${date.getHours()}${date.getMinutes()}${date.getSeconds()}`;
+    let dateFormat = `${date.getFullYear()}${date.getMonth() + 1}${date.getDate()}-${date.getHours()}${date.getMinutes()}${date.getSeconds()}`;
     // dateFormat : 20260729-155930
 
     let newAccountNumber = dateFormat;
