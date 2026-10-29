@@ -32,8 +32,9 @@ export function createCustomerNo() {
 
 export function getDateTimeFormat() {
     let date = new Date();
-    let dateTimeFormat = '${date.getFullYear()}-${date.getMonth()+1}-${date.getDate()}';
-    dateTimeFormat += '${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}';
+    const pad = (value) => String(value).padStart(2, '0');
+    let dateTimeFormat = `${date.getFullYear()}-${pad(date.getMonth() + 1)}-${pad(date.getDate())}`;
+    dateTimeFormat += ` ${pad(date.getHours())}:${pad(date.getMinutes())}:${pad(date.getSeconds())}`;
     // 2026-07-30 09:31:45
 
     return dateTimeFormat;
