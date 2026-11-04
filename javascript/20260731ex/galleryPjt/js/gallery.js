@@ -1,6 +1,8 @@
+// 갤러리에 순서대로 보여줄 이미지 파일명 목록 (./imgs/pics/ 폴더 기준)
 let pics = ['pic_01.jpg', 'pic_02.jpg', 'pic_03.jpg',
             'pic_04.jpg', 'pic_05.jpg', 'pic_06.jpg'];
 
+// 현재 화면에 표시 중인 이미지의 pics 인덱스
 let currentIdx = 0;
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -10,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 
+// tagEle(img 태그)의 src 를 picArr[idx] 이미지 경로로 바꾼다
 const changeImg = (tagEle, picArr, idx) => {
     console.log('changImg() called!');
 
@@ -17,6 +20,7 @@ const changeImg = (tagEle, picArr, idx) => {
 
 }
 
+// 좌/우 화살표 클릭 시 인덱스를 순환시키며 이미지를 교체하는 이벤트를 등록한다
 const addEvents = () => {
 
     let left_btn = document.querySelector('#wrap li.left_arrow > a');
