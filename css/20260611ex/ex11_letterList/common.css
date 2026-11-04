@@ -1,22 +1,27 @@
+/* 모든 요소의 기본 여백을 없애고 글자색을 짙은 회색으로 맞춘다. */
 * {
     margin: 0;
     padding: 0;
     color: #242424;
 }
 
+/* 링크는 밑줄을 없앤다. */
 a {
     text-decoration: none;
     color: #242424;
 }
 
+/* 링크에 마우스를 올리면 밑줄을 보여 준다. */
 a:hover {
     text-decoration: underline;
 }
 
+/* 목록 안의 float 요소를 감싸도록 overflow 를 숨긴다. */
 ul {
     overflow: hidden;
 }
 
+/* 목록 점을 없애고 항목을 가로로 나열한다. */
 li {
     list-style: none;
     float: left;
