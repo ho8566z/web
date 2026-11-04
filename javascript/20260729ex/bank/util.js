@@ -1,3 +1,4 @@
+// min 이상 max 이하의 정수를 무작위로 반환한다 (양 끝값 포함)
 export function createRandomNumber(min, max) {
     console.log('createRandomNumber() CALLED!!');
 
@@ -5,6 +6,7 @@ export function createRandomNumber(min, max) {
 
 }
 
+// 현재 시각과 난수로 '날짜-시각-3자리-4자리' 형태의 계좌번호를 만든다
 export function createAccountNumber() {
     console.log('createAccountNumber() CALLED!!');
 
@@ -22,6 +24,7 @@ export function createAccountNumber() {
 
 }
 
+// '연도-7자리 난수-2자리 난수' 형태의 고객번호를 만든다
 export function createCustomerNo() {
     console.log('createCustomerNo() CALLED!!');
 
@@ -30,6 +33,7 @@ export function createCustomerNo() {
 
 }
 
+// 현재 시각을 'YYYY-MM-DD HH:MM:SS' 형식 문자열로 반환한다
 export function getDateTimeFormat() {
     let date = new Date();
     const pad = (value) => String(value).padStart(2, '0');
