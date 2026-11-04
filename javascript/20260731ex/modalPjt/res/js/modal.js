@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 
+// 버튼 클릭 시 모달을 열고, 모달 배경 클릭 시 닫는 이벤트를 등록한다
 const addEvents = () => {
     console.log('addEvents() called!');
 
@@ -35,6 +36,7 @@ const addEvents = () => {
 
 }
 
+// 모달(#modal_bg)이 숨겨져 있으면 보이게, 보이면 숨기게 토글한다
 const showHideEleForModal = () => {
     console.log('showHideEle() called!');
 
