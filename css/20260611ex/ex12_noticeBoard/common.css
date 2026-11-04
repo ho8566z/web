@@ -11,7 +11,7 @@ a {
     color: #242424;
 }
 
-/* href 가 #none 인 링크는 마우스를 올려도 밑줄을 보여 주지 않는다. */
+/* href 가 #none 인 링크에 마우스를 올리면 밑줄을 보여 준다. */
 a[href="#none"]:hover {
     text-decoration: underline;
 }
