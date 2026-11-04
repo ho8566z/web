@@ -1,3 +1,4 @@
+// 1초마다 하나씩 화면에 추가할 대화 메시지 목록
 let msgs = [
     '안녕하세요.',
     '네. 안녕하세요.',
@@ -12,6 +13,7 @@ let msgs = [
     '아주 화창합니다.'
 ]
 
+// 다음에 출력할 msgs 의 인덱스
 let currentIdx = 0;
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -21,6 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 
+// setInterval 이 돌려주는 타이머 ID (모든 메시지를 출력하면 clearInterval 로 멈춘다)
 let intervalID = '';
 
 const init = () => {
