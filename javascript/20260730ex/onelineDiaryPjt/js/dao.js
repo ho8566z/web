@@ -16,7 +16,7 @@ export const insertNewMember = (id, newMemberObj) => {
 }
 
 export const searchMember = (id) => {
-    console.log('searMember() called');
+    console.log('searchMember() called');
 
     let memberObj = memberDB.get(id);  // { ... } or undefined
 
