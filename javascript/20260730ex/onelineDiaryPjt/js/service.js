@@ -32,7 +32,7 @@ export const addMember = (id, pw, mail) => {
 export const getMember = (id, pw) => {
     console.log('getMember() called!');
 
-    let seachedMemberObj = searchMember(id);    // { ... } or undefined
+    let searchMemberObj = searchMember(id);    // { ... } or undefined
 
     /*
     if (searchMemberObj === undefined) {
