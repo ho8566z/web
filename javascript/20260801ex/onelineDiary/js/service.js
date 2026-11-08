@@ -44,6 +44,7 @@ export const addMember = (id, pw, mail) => {
 
 }
 
+// id 와 pw 가 일치하는 회원이 있으면 true, 아니면 false 를 반환한다
 export const getMember = (id, pw) => {
     console.log('getMember() CALLED!!');
 
