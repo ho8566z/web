@@ -12,6 +12,7 @@ export const views = {
     listWrap: '',
 }
 
+// 각 화면(div) 요소를 찾아 views 객체에 담아 둔다
 export const initViews = () => {
     console.log('initViews() CALLED!!');
 
