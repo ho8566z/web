@@ -1,5 +1,6 @@
 import { memberDB, diaryDB } from './db.js';
 
+// id 에 해당하는 회원 정보를 반환한다. 없으면 undefined
 export const isMember = (id) => {
     console.log('isMember() CALLED!!');
 
