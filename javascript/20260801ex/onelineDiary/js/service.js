@@ -61,6 +61,7 @@ export const getMember = (id, pw) => {
 
 }
 
+// 로그인한 회원의 일기장에 일기 한 건을 추가한다
 export const addDiary = (diary) => {
     console.log('addDiary() CALLED!!');
 
