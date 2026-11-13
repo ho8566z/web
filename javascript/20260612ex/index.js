@@ -5,6 +5,7 @@
 
 // javascript의 변수란?
 // var, let, const 키워드를 사용해 선언한다
+// var: 재선언·재할당 가능 / let: 재할당만 가능 / const: 재할당 불가(상수)
 var num = 10;
 console.log('num: ', num)
 console.log('num: ' + num)
