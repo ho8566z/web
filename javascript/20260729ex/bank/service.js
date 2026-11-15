@@ -15,9 +15,11 @@ import {
     accountDB
  } from './db.js'
 
+/** accountDB 에 거래 기록을 저장할 때 쓰는 키. 기록을 추가할 때마다 1씩 늘어난다. */
 export let accountNo = 1;
 
 // 계좌 개설
+/** 고객 이름·전화번호를 입력받아 고객과 잔액 0 인 계좌를 만들어 DB 에 저장한다. 입력이 비면 중단한다. */
 export const openingNewAccount = () => {
     console.log('openingNewAccount() CALLED!!');
 
@@ -44,6 +46,7 @@ export const openingNewAccount = () => {
 }
 
 // 입금
+/** 고객번호·계좌번호·입금액을 입력받아 입금 기록을 accountDB 에 추가한다. */
 export const doDeposit = () => {
     console.log('doDeposit() CALLED!!');
 
@@ -60,6 +63,7 @@ export const doDeposit = () => {
 }
 
 // 출금
+/** 고객번호·계좌번호·출금액을 입력받아 출금 기록을 accountDB 에 추가한다. */
 export const doWithDraw = () => {
     console.log('doWithDraw() CALLED!!');
 
@@ -76,6 +80,7 @@ export const doWithDraw = () => {
 }
 
 // 입/출금 내역
+/** 고객번호·계좌번호를 확인한 뒤 해당 계좌의 입출금 기록을 콘솔에 출력한다. */
 export const printDepositWithdrawHistory = () => {
     console.log('printDepositWithdrawHistory() CALLED!!');
 
