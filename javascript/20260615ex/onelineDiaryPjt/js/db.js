@@ -1,6 +1,7 @@
 const memberDB = new Map();
 const diaryDB = new Map();
 
+/** 아이디·비밀번호·메일로 회원을 등록하고, 그 회원의 빈 일기 목록을 만든다. */
 function addMember(id, pw, mail) {
     console.log('addMember() called');
 
@@ -14,6 +15,7 @@ function addMember(id, pw, mail) {
 
 }
 
+/** 아이디가 있고 비밀번호가 같으면 true, 아니면 false 를 반환한다. */
 function searchMember(id, pw) {
     console.log('searchMember() called');
 
