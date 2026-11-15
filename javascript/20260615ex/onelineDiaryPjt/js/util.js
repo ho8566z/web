@@ -1,5 +1,7 @@
+/** 요일 번호(0: 일요일 ~ 6: 토요일)에 맞는 영문 약어 목록. */
 let days = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
 
+/** 오늘 날짜를 "[년/월/일/요일] " 형식의 문자열로 만들어 반환한다. */
 function getCurrentDate() {
     console.log('getCurrentDate() called');
 
