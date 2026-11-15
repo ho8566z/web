@@ -42,7 +42,7 @@ while (config.systemFlag) {
 
         case config.SYSTEM_OUT:
             console.log('SYSTEM_OUT');
-            systemFlag = false;
+            config.systemFlag = false;
             break;
 
     }
