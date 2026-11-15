@@ -29,6 +29,7 @@ function searchMember(id, pw) {
 
 }
 
+/** 로그인한 회원을 memberDB 에서 삭제한다. 일기 목록(diaryDB)은 지우지 않는다. */
 function removeMemberBySignedMemberId() {
     console.log('removeMemberBySignedMemberId() called');
 
@@ -39,6 +40,7 @@ function removeMemberBySignedMemberId() {
 
 }
 
+/** 로그인한 회원의 일기 목록 맨 뒤에 새 일기 내용을 추가한다. */
 function addDiary(txt) {
     console.log('addDiary() called');
 
@@ -49,6 +51,7 @@ function addDiary(txt) {
 
 }
 
+/** 로그인한 회원의 일기 목록(배열)을 반환한다. */
 function searchDiaries() {
     console.log('searchDiaries() called');
 
