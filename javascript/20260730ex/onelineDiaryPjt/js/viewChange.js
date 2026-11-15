@@ -4,6 +4,7 @@ export const SIGN_OUT_VIEW         = 3;
 export const DIARY_WRITE_VIEW      = 4;
 export const DIARY_LIST_VIEW       = 5;
 
+/** 화면별 최상위 div 요소를 보관한다. initViews() 호출 뒤에 채워진다. */
 export const views = {
     signUpWrap: '',
     signInWrap: '',
@@ -11,6 +12,7 @@ export const views = {
     listWrap: '',
 }
 
+/** 각 화면(회원가입·로그인·일기쓰기·일기목록)의 div 를 찾아 views 에 담는다. */
 export const initViews = () => {
     console.log('initViews() CALLED!!');
 
@@ -21,6 +23,7 @@ export const initViews = () => {
 
 }
 
+/** 선택한 화면 번호의 div 만 보이게 하고 나머지는 숨긴다. */
 export const showSelectedView = (viewNo) => {
     console.log('showSelectedView() CALLED!!');
 
