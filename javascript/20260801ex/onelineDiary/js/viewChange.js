@@ -23,6 +23,7 @@ export const initViews = () => {
 
 }
 
+// 번호에 맞는 화면(div)만 보이게 하고 나머지는 숨긴다
 export const showSelectedView = (viewNo) => {
     console.log('showSelectedView() CALLED!!');
 
