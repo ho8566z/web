@@ -17,6 +17,7 @@ import {
     setMenuStatus
 } from './menuChange.js';
 
+// 아이디가 중복되지 않으면 회원과 일기장을 만들고 true, 중복이면 false 를 반환한다
 export const addMember = (id, pw, mail) => {
     console.log('addMember() CALLED!!');
 
@@ -69,6 +70,7 @@ export const addDiary = (diary) => {
 
 }
 
+// 로그인한 회원의 일기 배열을 반환한다
 export const getMyDiaryArr = () => {
     console.log('getMyDiaryArr() called!!');
 
