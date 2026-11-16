@@ -47,6 +47,7 @@ export const createMyDiaryArr = (id) => {          // gildong
 
 }
 
+// 해당 회원의 일기 배열 끝에 일기 한 건을 추가한다
 export const addMyDiary = (id, diary) => {
     console.log('addMyDiary() CALLED!!');
 
@@ -57,6 +58,7 @@ export const addMyDiary = (id, diary) => {
 
 }
 
+// 해당 회원의 일기 배열을 반환한다
 export const selectDiaryArr = (id) => {
     console.log('selectDiaryArr() called!!');
 
