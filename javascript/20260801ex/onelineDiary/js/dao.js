@@ -8,6 +8,7 @@ export const isMember = (id) => {
 
 }
 
+// 새 회원 정보를 id 를 키로 memberDB 에 저장한다
 export const insertNewMember = (id, newMemberObj) => {
     console.log('insertNewMember() CALLED!!');
     memberDB.set(id, newMemberObj);
@@ -26,10 +27,12 @@ export const searchMember = (id) => {
 
 }
 
+// 회원 정보 수정 (아직 구현하지 않음)
 export const updateMember = () => {
     
 }
 
+// 회원 정보 삭제 (아직 구현하지 않음)
 export const deleteMember = () => {
     
 }
