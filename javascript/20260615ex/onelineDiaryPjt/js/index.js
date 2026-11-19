@@ -1,3 +1,5 @@
+// [요약] DOMContentLoaded 이후 초기화를 시작하는 한 줄 일기 화면의 진입 스크립트
+// [요약] DOMContentLoaded 이후 초기화를 시작하는 한 줄 일기 화면의 진입 스크립트
 // document
 // 최상위 객체(window) -> document -> head / body -> div ==> Dom 트리
 
