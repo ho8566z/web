@@ -1,3 +1,5 @@
+// [요약] JavaScript 제어문(if문, switch~case문) 사용법을 정리한 파일
+// [요약] JavaScript 제어문(if문, switch~case문) 사용법을 정리한 파일
 // 제어문 - 조건문(if문 switch ~ case문)
 /*
 if문
