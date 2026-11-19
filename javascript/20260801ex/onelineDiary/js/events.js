@@ -1,3 +1,5 @@
+// [요약] 한 줄 일기 화면의 이벤트 처리를 정리한 파일(viewChange.js 등을 가져와 연결)
+// [요약] 한 줄 일기 화면의 이벤트 처리를 정리한 파일(viewChange.js 등을 가져와 연결)
 import {
     SIGN_UP_VIEW,
     SIGN_IN_VIEW,
