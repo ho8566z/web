@@ -1,3 +1,6 @@
+/* 009ex 메인 화면: 헤더(header) → 메뉴(nav) → 본문 3단(section) 순서로 스타일을 작성했다. */
+
+/* ---------- 헤더: 검은 배경 안에 1400px 폭의 내용 영역을 가운데 둔다 ---------- */
 header {
     background-color: #000;
 }
@@ -8,6 +11,7 @@ header div.header_wrap {
     margin: 0 auto;
 }
 
+/* ---------- 메뉴: gnb 는 검은 바탕에 흰 글씨, lnb 는 흰 바탕의 가운데 정렬 ---------- */
 nav {
     background-color: #000;
 }
@@ -35,11 +39,13 @@ nav div.lnb_wrap {
     background-color: #fff;
 }
 
+/* ---------- 본문: 왼쪽·가운데·오른쪽 3단(680 + 328 + 332px, 단 사이 여백 30px 두 칸 = 1400px) ---------- */
 section div.section_wrap {
     width: 1400px;
     margin: 0 auto;
 }
 
+/* 왼쪽 단: 1번째 div 는 큰 제목, 3번째 div 는 굵은 링크, 4번째 div 는 목록(세로로 쌓음) */
 section div.section_wrap li.article_left {
     width: 680px;
 }
@@ -69,6 +75,7 @@ section div.section_wrap li.article_left div:nth-child(4) li {
     padding-top: 7px;
 }
 
+/* 가운데 단: 2·4·6번째 div 가 굵은 소제목 */
 section div.section_wrap li.article_center {
     width: 328px;
     margin: 0 30px;
@@ -82,6 +89,7 @@ section div.section_wrap li.article_center div:nth-child(6) {
     margin-bottom: 16px;
 }
 
+/* 오른쪽 단: 2번째 div 가 소제목, 3번째 div 의 목록은 점선 구분선과 마우스를 올리면 옅은 배경 */
 section div.section_wrap li.article_right {
     width: 332px;
 }
