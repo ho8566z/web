@@ -1,8 +1,12 @@
+/* 일기장 프로젝트 공통 스타일: 기본 여백을 없애고 링크와 목록의 기본 모양을 정리한다. */
+
+/* 모든 요소의 브라우저 기본 여백을 없앤다 */
 * {
     margin: 0;
     padding: 0;
 }
 
+/* 링크: 밑줄 없이 진한 회색, 마우스를 올리면 밑줄을 보여 준다 */
 a {
     text-decoration: none;
     color: #242424;
@@ -12,10 +16,12 @@ a:hover {
     text-decoration: underline;
 }
 
+/* 목록: 안의 li 를 float 해도 높이가 유지되도록 overflow 로 감싼다 */
 ul {
     overflow: hidden;
 }
 
+/* 목록 앞의 점을 없앤다 */
 li {
     list-style: none;
 }
